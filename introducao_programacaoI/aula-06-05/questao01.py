@@ -11,4 +11,3 @@ print(mensagem.upper())
 
 """Imprimir em caixa baixa"""
 print(mensagem.lower())
-
