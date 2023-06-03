@@ -13,6 +13,7 @@ while True:
     print("2 - Pesquisar\n")
     print("3 - Listar\n")
     print("4 - Remover\n")
+    print("5 - Alterar\n")
 
     opcao = int(input("Digite a opção desejada: "))
 
@@ -34,4 +35,17 @@ while True:
             print(f'--> {nome}')
             
     elif opcao == 4:
-        lista.remove(input("Informe o nome a ser removido: "))
+        nome_remover = input("Informe quem será removido: ")
+        if nome_remover in lista:
+            lista.remove(nome_remover)
+        else:
+            print(f'Nome não encontrado!')
+            
+    elif opcao == 5:
+        nome_alterar = input("Informe o nome que será alterado: ")
+        if nome_alterar in lista:
+            print(f'O nome {nome_alterar} foi encontrado.')
+            alteracao = input("Informe o novo nome: ")
+            lista[lista.index(nome_alterar)] = alteracao
+        else: 
+            print(f'O nome não foi encontrado!')           
