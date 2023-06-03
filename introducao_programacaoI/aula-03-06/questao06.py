@@ -13,4 +13,12 @@ ano_atual = datetime.datetime.now().year
 ano_nascimento = int(input("Informe o seu ano de nascimento:\n"))
 idade = ano_atual - ano_nascimento
 
-if 
+if idade >=16:
+    print("Você está apto para votar!")
+    if idade >=18:
+        print("Você já pode tirar sua CNH!")
+    else:
+        print("Você não está apto para tirar a CNH")
+    
+elif idade <16:
+    print("Você não está apto para votar e nem para tirar sua CNH!")
