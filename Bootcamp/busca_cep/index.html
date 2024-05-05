@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar CEP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Consultar CEP</h1>
+        <form id="cepForm">
+            <label for="cepInput">CEP:</label>
+            <input type="text" id="cepInput" maxlength="9" placeholder="Digite o CEP" oninput="formatarCEP(this)"
+                onblur="buscarCEP()">
+            <label for="logradouroInput">Rua:</label>
+            <input type="text" id="logradouroInput" readonly>
+            <label for="numInput">Número:</label>
+            <input type="text" id="numInput">
+            <label for="bairroInput">Bairro:</label>
+            <input type="text" id="bairroInput" readonly>
+            <label for="cidadeInput">Cidade:</label>
+            <input type="text" id="cidadeInput" readonly>
+            <label for="estadoInput">Estado:</label>
+            <input type="text" id="estadoInput" readonly>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
